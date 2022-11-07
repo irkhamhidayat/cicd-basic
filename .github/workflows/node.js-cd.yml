@@ -18,9 +18,9 @@ jobs:
       - name: deploy pakai ssh
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secret.HOST }}
-          username: ${{ secrete.USERNAME }}
-          key: ${{ secret.PrIVATE_KEYS }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PrIVATE_KEYS }}
           port: 22
           script: |
             cd ~/rabbitmq/cicd-basic
