@@ -22,8 +22,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PrIVATE_KEYS }}
           port: 22
-          script: |
+          script:
             cd ~/rabbitmq/cicd-basic
-            git status
             node publisher.js
          
