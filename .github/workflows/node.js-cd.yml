@@ -24,5 +24,4 @@ jobs:
           port: 22
           script:
             cd ~/rabbitmq/cicd-basic
-            node publisher.js
          
